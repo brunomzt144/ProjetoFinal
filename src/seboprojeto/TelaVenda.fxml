@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane minHeight="-Infinity" minWidth="-Infinity" vgap="5.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="seboprojeto.ControllerTelaVenda">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Button fx:id="btn_confirma" mnemonicParsing="false" text="Confirma" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+      <Button fx:id="btn_cancela" mnemonicParsing="false" text="Cancela" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+      <Label fx:id="ltotal" text="Total R$:" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+      <TextField fx:id="txtValorTotal" GridPane.columnIndex="4" GridPane.rowIndex="5" editable="false" />
+      <TableView fx:id="tabelaProduto" prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="3" GridPane.rowIndex="4" GridPane.rowSpan="3">
+        <columns>
+          <TableColumn fx:id="colunaDesc" prefWidth="75.0" text="Descricao" />
+          <TableColumn fx:id="colunaPreço" prefWidth="75.0" text="Preço" />
+            <TableColumn fx:id="colunaQtde" prefWidth="75.0" text="Qtde" />
+        </columns>
+      </TableView>
+      <Label fx:id="lCliente" text="Cliente" />
+      <Label fx:id="lProduto" text="Insira Produto" GridPane.rowIndex="1" />
+      <TextField fx:id="txtCliente" GridPane.columnIndex="1" />
+      <TextField fx:id="txtProduto" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextField fx:id="txtNomeCliente" prefHeight="25.0" prefWidth="334.0" GridPane.columnIndex="3" GridPane.columnSpan="2147483647" GridPane.rowIndex="4" editable="false"/>
+      <TextField fx:id="txtQtdeProduto" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Label fx:id="lQtdeProduto" prefHeight="38.0" prefWidth="30.0" text="Qtde:" GridPane.rowIndex="2" />
+      <Button fx:id="btn_confirmaprod" mnemonicParsing="false" text="Inclui Produto" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+      <Button fx:id="btn_ConfirmaCliente" mnemonicParsing="false" text="Inlcui Cliente" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+      <Button fx:id="btn_retira" mnemonicParsing="false" text="Retira Produto" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <Button fx:id="btn_buscacliente" mnemonicParsing="false" text="Busca Cliente" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+      <Button fx:id="btn_buscaproduto" mnemonicParsing="false" text="Busca Produto" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+   </children>
+   <padding>
+      <Insets right="15.0" top="15.0" />
+   </padding>
+</GridPane>

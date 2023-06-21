@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:controller="seboprojeto.ControllerTelaAtualizaProduto" hgap="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" vgap="5.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <children>
+      <Label fx:id="labelTitulo" text="Titulo" GridPane.rowIndex="1" />
+      <Label fx:id="labelPaginas" text="Nº Paginas" GridPane.rowIndex="5" />
+      <Label fx:id="labelEditora" text="Editora" GridPane.rowIndex="3" />
+      <Label fx:id="labelQuantidade" text="Quantidade" GridPane.rowIndex="2" />
+      <Label fx:id="labelValor" text="Valor" GridPane.rowIndex="4" />
+      <TextField fx:id="txtTitulo" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextField fx:id="txtQntd" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <TextField fx:id="txtEditora" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <TextField fx:id="txtValor" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <TextField fx:id="txtPaginas" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <Button fx:id="btnConfirma" mnemonicParsing="false" text="Confirma" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+      <Button fx:id="btnFechar" mnemonicParsing="false" text="Fecha" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+      <Label fx:id="lid" text="Id" />
+      <TextField fx:id="txtid" GridPane.columnIndex="1" editable="false"/>
+   </children>
+</GridPane>

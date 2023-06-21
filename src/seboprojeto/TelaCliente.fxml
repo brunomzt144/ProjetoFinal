@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane hgap="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" vgap="5.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="seboprojeto.ControllerTelaCliente">
+  <columnConstraints>
+    <ColumnConstraints />
+    <ColumnConstraints />
+      <ColumnConstraints />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints />
+    <RowConstraints />
+    <RowConstraints minHeight="-Infinity" />
+  </rowConstraints>
+   <children>
+      <TableView fx:id="tabelaCliente" prefHeight="300.0" prefWidth="400.0" GridPane.columnSpan="3" GridPane.rowSpan="2">
+        <columns>
+          <TableColumn fx:id="tableclienteid" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="tableclientenome" prefWidth="75.0" text="Nome" />
+            <TableColumn fx:id="tableclientefone" prefWidth="75.0" text="Telefone" />
+            <TableColumn fx:id="tabelaclientecpf" prefWidth="75.0" text="CPF" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn_incluicliente" mnemonicParsing="false" prefHeight="35.0" prefWidth="125.0" text="Inserir" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+      <Button fx:id="btn_alteracliente" mnemonicParsing="false" prefHeight="35.0" prefWidth="125.0" text="Altera" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+      <Button fx:id="btn_excluicliente" mnemonicParsing="false" prefHeight="35.0" prefWidth="125.0" text="Exclui" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+   </children>
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+</GridPane>
